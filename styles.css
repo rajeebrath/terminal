@@ -1,0 +1,38 @@
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif; /* Use a more common font for better readability on mobile */
+}
+
+p {
+  display: inline;
+}
+
+a,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.console, #terminal {
+  font-family: monospace;
+  font-size: 12pt;
+  color: rgb(33, 183, 0);
+  background: #000000;
+  border: none;
+  padding: 10px; /* Add padding for better touch interaction */
+  outline: none;
+  width: 100%; /* Make the terminal fill the width of the screen */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.result-text {
+  color: red;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .console, #terminal {
+    font-size: 10pt; /* Decrease font size for smaller screens */
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+}
