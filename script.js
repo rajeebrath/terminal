@@ -12,7 +12,7 @@ $(document).keyup(function (e) {
         var tmp = $("#terminal").val().toUpperCase();
         $("#terminal").val("");
 
-        if (isPasswordRequired && tmp === "1234") {
+        if (isPasswordRequired && tmp === "121020") {
             isPasswordRequired = false;
             result = result + "<br>Password correct! Here is the result:<br>";
             // Here you can execute the command you want to perform after password validation.
@@ -195,10 +195,6 @@ function processCommand(command) {
                         "<br>• MOST MEMORABLE?:<br>\
                         &nbsp;&nbsp;-  <span class='highlight'>Fouth date, Spend many times together and get a new experience on 17 MAY 24</span><br>";
                 break;
-
-
-
-
 
         default:
             result = "<br>" + command + " is not recognized as a command.<br>";
