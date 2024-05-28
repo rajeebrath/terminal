@@ -1,6 +1,9 @@
 body {
   background-color: #000000;
   font-family: Arial, sans-serif; /* Use a more common font for better readability on mobile */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 p {
@@ -26,8 +29,13 @@ a:hover {
 }
 
 .result-text {
-  color: red;
+  color: rgb(243, 54, 54);
 }
+
+.highlight {
+  color: rgb(91, 168, 255); /* Change the color to your desired color */
+}
+
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
