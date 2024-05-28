@@ -203,3 +203,16 @@ function processCommand(command) {
 
     return result;
 }
+
+function changeTitle() {
+    var titles = ["版权", "SBKFFC", "18.1.20.8"]; // Add your titles here
+    var index = 0;
+
+    setInterval(function() {
+      document.title = titles[index];
+      index = (index + 1) % titles.length;
+    }, 1000); // Change title every second (1000 milliseconds)
+  }
+
+  // Call the function to start changing the title
+  changeTitle();
